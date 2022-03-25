@@ -80,7 +80,8 @@ ClassMethod queryINFO(class As %String) As %String
 	Set method = "getObjectDisplayName"
 
 	If ##class(%Dictionary.CompiledMethod).IDKEYExists(class, method) {
-		Set sqlProc = $$$ClassSQLTable(class) _ "_" _ method _ "(id)"
+		Set sqlProc = $$$comClassKeyGet(class,$$$cCLASSsqlschemaname)_"."_  $$$comMemberKeyGet(class,$$$cCLASSmethod,method,$$$cMETHsqlname)
+		Set sqlProc = sqlProc _ "(id)"
 	}
   else {
 		Set sqlProc = $Parameter(class, $$$displayProp)
