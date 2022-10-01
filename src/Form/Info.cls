@@ -12,7 +12,7 @@ ClassMethod getFormsList() As %DynamicArray
 	
 	set rs = ##class(%ResultSet).%New("%Dictionary.ClassDefinition:SubclassOf")
 	set sc = rs.%Execute($$$adaptorClass)
-	quit:$$$ISERR(sc) 
+	quit:$$$ISERR(sc) sc
 
 	while (rs.%Next(.sc)) {
 		quit:$$$ISERR(sc)		

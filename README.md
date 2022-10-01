@@ -1,4 +1,6 @@
 # RESTForms
+[![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2FRESTForms2&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2FRESTForms2) 
+
 RESTForms is a generalized REST API backend for web applications built on InterSystems (Caché or Ensemble) backend.
 
 # Development installation
